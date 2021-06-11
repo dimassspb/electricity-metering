@@ -41,7 +41,7 @@ const getData = () => {
 
   const div = document.createElement('div');
   div.classList.add('result');
-  div.textContent = `Оплата электроэнергии за ${today.getMonth()} ${today.getFullYear()} года. Показания счетчика на ${strDate} день ${dayMeterReadingInput.value}кВт ночь ${nightMeterReadingInput.value}кВт`;
+  div.textContent = `Оплата электроэнергии за ${today.getMonth()} месяц ${today.getFullYear()} года. Показания счетчика на ${strDate} день ${dayMeterReadingInput.value}кВт ночь ${nightMeterReadingInput.value}кВт`;
   results.append(div);
 
   const cost = document.createElement('div');
