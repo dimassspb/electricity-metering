@@ -19,6 +19,7 @@ justify-content:center;
 }
 
 .input {
+  width: 100px;
   border: 1px solid #46494d;
   margin-left: 12px;
 }
