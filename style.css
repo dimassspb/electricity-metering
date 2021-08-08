@@ -15,6 +15,7 @@ h1 {
 display: flex;
 text-align: center;
 justify-content:center;
+
 }
 
 .input {
@@ -31,4 +32,9 @@ justify-content:center;
   color: #fff;
   padding: 8px 16px;
   font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 200px;
 }
