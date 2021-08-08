@@ -13,6 +13,14 @@ const costs = document.querySelector('.costs');
 
 var today = new Date();
 
+const monthsArr = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+let month;
+for (let i = 0; i < monthsArr.length; i++) {
+  if (today.getMonth() === i) {
+    month = monthsArr[i - 1];
+  }
+}
+
 var strDate = 'd-m-Y'
   .replace('Y', today.getFullYear())
   .replace('m', today.getMonth() + 1)
@@ -41,7 +49,7 @@ const getData = () => {
 
   const div = document.createElement('div');
   div.classList.add('result');
-  div.textContent = `Оплата электроэнергии за ${today.getMonth()} месяц ${today.getFullYear()} года. Показания счетчика на ${strDate} день ${dayMeterReadingInput.value}кВт ночь ${nightMeterReadingInput.value}кВт`;
+  div.textContent = `Оплата электроэнергии за ${month} месяц ${today.getFullYear()} года. Показания счетчика на ${strDate} день ${dayMeterReadingInput.value}кВт ночь ${nightMeterReadingInput.value}кВт`;
   results.append(div);
 
   const cost = document.createElement('div');
