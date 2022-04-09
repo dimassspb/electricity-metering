@@ -1,8 +1,8 @@
 body {
   font-size: 25px;
   color: #000;
-  background: url(./images/img1.jpg) center center/cover no-repeat;
-/* background-size: cover; */
+  background: url(./images/img1.jpg);
+background-size: cover;
 }
 
 h1 {
